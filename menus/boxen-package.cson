@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable boxen-package': 'boxen-package:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'boxen-package'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'boxen-package:toggle' }
+      ]
+    ]
+  }
+]
